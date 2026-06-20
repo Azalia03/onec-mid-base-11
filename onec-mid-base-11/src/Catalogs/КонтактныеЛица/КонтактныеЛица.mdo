@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ff53584-9189-4e8a-8c1e-d8b9b46b206b">
+  <producedTypes>
+    <objectType typeId="27c55794-0cf3-4025-95c7-28edacfa2a36" valueTypeId="adb2775a-a940-4664-bec3-d9c10d9d9b59"/>
+    <refType typeId="0a041fae-a203-4d8c-aae5-6d82238a34ff" valueTypeId="f3713bef-d9a2-4b65-9923-c9b395c14109"/>
+    <selectionType typeId="d4553f75-ab2b-49ff-8a59-ef1310994000" valueTypeId="99ae9962-8fe8-4df4-8e43-e52d24417037"/>
+    <listType typeId="c6caf2bc-1877-4c6a-951b-1abd7aed4863" valueTypeId="77d38ce6-ce67-494d-81a6-b06945a55b5a"/>
+    <managerType typeId="09bb263a-20e7-42ce-8919-48a006dae736" valueTypeId="f9fd6739-3bc8-4e1b-ac80-41f41fa2f611"/>
+  </producedTypes>
+  <name>КонтактныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КонтактныеЛица.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КонтактныеЛица.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контактное лицо</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КонтактныеЛица.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="5685f478-ba88-47bd-ab8b-6b1234b09be0">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb11a97c-0328-4f6c-bd16-877cf80b11be">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="468092de-07ed-4ce9-b675-0f373d02a4ff">
+    <name>ДействуетНаОсновании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует на основании</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f0e5a08-3350-4277-9b3f-6d65a16e4e03">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0c051b1d-028f-4672-8622-5af699beb309">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
